@@ -1,0 +1,106 @@
+{
+  "landing": {
+    "greeting": "Hi, my name is",
+    "name": "Daniel Diaz",
+    "specialization": "I am a Full Stack Developer specializing in Front-end development.",
+    "description": "One of my greatest motivations in this world is learning. I began my journey as a self-taught developer through tutorials and GitHub repositories until I was fortunate enough to discover the soyHenry bootcamp.\n\nDuring this stage, besides significantly developing my coding skills, I learned to work dynamically in a team using agile methodologies, managing the GIT workflow, understanding data structures, algorithms, and CSS frameworks.",
+    "resumeLink": "Check out my resume"
+  },
+  "navbar": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "skills": "SKILLS",
+    "projects": "PROJECTS",
+    "contact": "CONTACT"
+  },
+  "about": {
+    "title": "About me",
+    "description": "It has always been of interest to me, the world of technology and development, but I never had the push to delve deeper into it beyond the sphere of video games and news about new PC components. Until the pandemic arrived and amidst the lockdown, that's when I began my self-taught years with tutorials and GitHub repositories, until I was fortunate enough to discover the soyHenry bootcamp.During this stage, in addition to strongly developing my skills as a developer, I learned to work dynamically in teams with agile methodologies, manage the GIT workflow, understand data structures, algorithms, and CSS frameworks.Currently, I am seeking to gain more experience in development-related jobs.",
+    "whyTitle": "Why me?",
+    "whyDescription": "Because in addition to providing excellent technical skills as a developer, I stand out for my perceptive ability towards my colleagues.I am always ready to offer my help when needed and to learn from them when necessary, thus fostering an organized and efficient work environment that promotes collective growth and lays the groundwork for the start of my career in this field."
+  },
+  "skills": {
+    "title": "My Skills",
+    "technologies": "Technologies I've worked with"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Take a look at the projects I've worked on",
+    "projects": [
+      {
+        "name": "Recipes app",
+        "description": "A SPA that consumes data from an external API, and allows the visualization of general and detailed information for over 500,000 recipes. Among the functionalities available in this app are filtering and sorting recipes based on various variables such as if they are fetched from the API or the DB, health score, name, rating, as well as the creation of new recipes through a controlled form.",
+        "technologies": [
+          "JavaScript",
+          "React.js",
+          "Redux.js",
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "Styled Components",
+          "Spoonacular-API"
+        ],
+        "image": "/recipes.png",
+        "github": "https://github.com/DielanZH/Foods",
+        "deploy": ""
+      },
+      {
+        "name": "Component-Corner",
+        "description": "I collaborated as a frontend developer on the group project Component-Corner during the Henry bootcamp. I was responsible for implementing interactive and responsive interfaces and contributed to the architecture and design of the components, focusing on best practices and clean code. I worked closely with a multidisciplinary team, participating in planning meetings, code reviews, and technical challenge resolutions.",
+        "technologies": [
+          "JavaScript",
+          "Node.js",
+          "React.js",
+          "Redux.js",
+          "Express",
+          "PostgreSQL",
+          "Styled Components",
+          "MercadoPago-API"
+        ],
+        "image": "/src/components/projects/images/component-corner.png",
+        "github": "https://github.com/solayae/component-corner",
+        "deploy": "https://component-corner.vercel.app"
+      },
+      {
+        "name": "Insta-Chef",
+        "description": "I collaborated as a full-stack developer on the group project Insta-Chef, an artificial gastronomic e-commerce, during the Henry bootcamp. I contributed to the architecture and design of the components, focusing mainly on the front-end side of the project.",
+        "technologies": [
+          "JavaScript",
+          "React",
+          "Redux",
+          "Tailwind CSS",
+          "Express",
+          "PostgreSQL",
+          "Node.js",
+          "Stripe-API",
+          "Nodemailer-API"
+        ],
+        "image": "/src/components/projects/images/InstaChef.png",
+        "github": "https://github.com/FrancoInca/InstaChef-Front",
+        "deploy": "https://insta-chef.vercel.app"
+      },
+      {
+        "name": "GitHub Profile",
+        "description": "I took on a challenge from devChallenges to create a SPA that utilizes the GitHub API to fetch and display information about repositories and users. Additionally, I implemented responsive design principles to make the app accessible and functional across various devices and screen sizes.",
+        "technologies": [
+          "JavaScript",
+          "React.js",
+          "React-router",
+          "Styled Components",
+          "GitHub-API"
+        ],
+        "image": "/src/components/projects/images/GitHubProfile.png",
+        "github": "https://github.com/DielanZH/GitHub-profile",
+        "deploy": "https://github-profile-dielanzh.vercel.app"
+      }
+    ],
+    "viewButton": "View Project",
+    "codeButton": "View Code"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "Your message",
+    "sendButton": "Send"
+  }
+}

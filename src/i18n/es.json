@@ -1,0 +1,106 @@
+{
+    "landing": {
+        "greeting": "Hola, mi nombre es",
+        "name": "Daniel Diaz",
+        "specialization": "Soy un Desarrollador Full Stack y me especializo en el área de Front-end",
+        "description": "Una de mis mayores motivaciones en este mundo es aprender. Así empecé mis años de autodidacta con tutoriales y repositorios de GitHub, hasta que tuve la fortuna de conocer el bootcamp de soyHenry.\n\nEn esta etapa, además de desarrollar fuertemente mis habilidades como desarrollador, aprendí a trabajar en equipo de forma dinámica con metodologías ágiles, el manejo del flujo de GIT, estructura de datos, algoritmos y frameworks CSS.Actualmente estoy buscando obtener mayor experiencia en trabajos relacionados al desarrollo.",
+        "resumeLink": "Mira mi curriculum"
+    },
+    "navbar": {
+        "home": "INICIO",
+        "about": "SOBRE MI",
+        "skills": "HABILIDADES",
+        "projects": "PROYECTOS",
+        "contact": "CONTACTO"
+    },
+    "about": {
+        "title": "Sobre mi",
+        "description": "Siempre fue de mi interés todo el mundo de la tecnología y el desarrollo pero nunca tuve el empujón como para adentrarme más en él más allá de la esfera de los videojuegos y las noticias sobre los componentes nuevos de PC. Hasta que llegó la pandemia y en medio del encierro fue donde empecé mis años de autodidacta con tutoriales y repositorios de GitHub, hasta que tuve la fortuna de conocer el bootcamp de soyHenry.En esta etapa, además de desarrollar fuertemente mis habilidades como desarrollador, aprendí a trabajar en equipo de forma dinámica con metodologías ágiles, el manejo del flujo de GIT, estructura de datos, algoritmos y frameworks CSS.Actualmente estoy buscando obtener mayor experiencia en trabajos relacionados al desarrollo.",
+        "whyTitle": "¿Por qué yo?",
+        "whyDescription": "Porque además de aportar excelentes habilidades técnicas como desarrollador, destaco por mi capacidad perceptiva hacia mis compañeros.Siempre estoy dispuesto a ofrecer mi ayuda cuando se necesite y a aprender de ellos cuando sea necesario, fomentando así un ambiente laboral organizado y eficiente que promueva el crecimiento colectivo y siente las bases para el inicio de mi carrera en este campo."
+    },
+    "skills": {
+        "title": "Mis Habilidades",
+        "technologies": "Tecnologías con las que he trabajado"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "subtitle": "Mira los proyectos en los que trabajé recientemente",
+        "projects": [
+            {
+                "name": "App de recetas",
+                "description": "Una SPA que consume datos de una API externa, y permite la visualización de información general y detallada de más de 500,000 recetas, entre las funcionalidades que dispone esta APP está el filtrado y ordenamiento de recetas por diferentes variables como si son traidos de la API o la DB, healthscore, nombre, calificación, además de la creación de nuevas recetas mediante un formulario controlado.",
+                "technologies": [
+                    "JavaScript",
+                    "React.js",
+                    "Redux.js",
+                    "Node.js",
+                    "Express",
+                    "PostgreSQL",
+                    "Styled Components",
+                    "Spoonacular-API"
+                ],
+                "image": "/recipes.png",
+                "github": "https://github.com/DielanZH/Foods",
+                "deploy": ""
+            },
+            {
+                "name": "Component-Corner",
+                "description": "Colaboré como desarrollador frontend en el proyecto grupal Component-Corner durante el bootcamp de Henry. Me encargue de implementar interfaces interactivas y responsivas y contribuí en la arquitectura y diseño de los componentes, enfocándome en buenas prácticas y código limpio. Trabajé estrechamente con un equipo multidisciplinario, participando en reuniones de planificación, revisiones de código y resolución de desafíos técnicos.",
+                "technologies": [
+                    "JavaScript",
+                    "Node.js",
+                    "React.js",
+                    "Redux.js",
+                    "Express",
+                    "PostgreSQL",
+                    "Styled Components",
+                    "MercadoPago-API"
+                ],
+                "image": "/src/components/projects/images/component-corner.png",
+                "github": "https://github.com/solayae/component-corner",
+                "deploy": "https://component-corner.vercel.app"
+            },
+            {
+                "name": "Insta-Chef",
+                "description": "Colaboré como desarrollador fullstack en el proyecto grupal Insta-Chef, un e-commerce gastronómico artificial durante el bootcamp de Henry. Contribuí en la arquitectura y diseño de los componentes, enfocándome principalmente del lado front-end del proyecto.",
+                "technologies": [
+                    "JavaScript",
+                    "React",
+                    "Redux",
+                    "Tailwind CSS",
+                    "Express",
+                    "PostgreSQL",
+                    "Node.js",
+                    "Stripe-API",
+                    "Nodemailer-API"
+                ],
+                "image": "/src/components/projects/images/InstaChef.png",
+                "github": "https://github.com/FrancoInca/InstaChef-Front",
+                "deploy": "https://insta-chef.vercel.app"
+            },
+            {
+                "name": "GitHub Profile",
+                "description": "Acepté un desafío de devChallenges para crear una SPA que utiliza la API de GitHub para obtener y mostrar información sobre repositorios y usuarios. Además, implementé principios de diseño responsive para hacer que la aplicación sea accesible y funcional en varios dispositivos y tamaños de pantalla.",
+                "technologies": [
+                    "JavaScript",
+                    "React.js",
+                    "React-router",
+                    "Styled Components",
+                    "GitHub-API"
+                ],
+                "image": "/src/components/projects/images/GitHubProfile.png",
+                "github": "https://github.com/DielanZH/GitHub-profile",
+                "deploy": "https://github-profile-dielanzh.vercel.app"
+            }
+        ],
+        "viewButton": "Ver Proyecto",
+        "codeButton": "Ver Código"
+    },
+    "contact": {
+        "title": "Contacto",
+        "emailPlaceholder": "Tu correo",
+        "messagePlaceholder": "Tu mensaje",
+        "sendButton": "Enviar"
+    }
+}
