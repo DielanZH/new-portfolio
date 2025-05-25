@@ -14,14 +14,66 @@
         "contact": "CONTACTO"
     },
     "about": {
-        "title": "Sobre mi",
-        "description": "Siempre fue de mi interés todo el mundo de la tecnología y el desarrollo pero nunca tuve el empujón como para adentrarme más en él más allá de la esfera de los videojuegos y las noticias sobre los componentes nuevos de PC. Hasta que llegó la pandemia y en medio del encierro fue donde empecé mis años de autodidacta con tutoriales y repositorios de GitHub, hasta que tuve la fortuna de conocer el bootcamp de soyHenry.En esta etapa, además de desarrollar fuertemente mis habilidades como desarrollador, aprendí a trabajar en equipo de forma dinámica con metodologías ágiles, el manejo del flujo de GIT, estructura de datos, algoritmos y frameworks CSS.Actualmente estoy buscando obtener mayor experiencia en trabajos relacionados al desarrollo.",
+        "title": "Sobre mi.",
+        "description": "Siempre fue de mi interés todo el mundo de la tecnología y el desarrollo pero nunca tuve el empujón como para adentrarme más en él más allá de la esfera de los videojuegos y las noticias sobre los componentes nuevos de PC. Hasta que llegó la pandemia y en medio del encierro fue donde empecé mis años de autodidacta con tutoriales y repositorios de GitHub, hasta que tuve la fortuna de conocer el bootcamp de soyHenry.\n\nEn esta etapa, además de desarrollar fuertemente mis habilidades como desarrollador, aprendí a trabajar en equipo de forma dinámica con metodologías ágiles, el manejo del flujo de GIT, estructura de datos, algoritmos y frameworks CSS.Actualmente estoy buscando obtener mayor experiencia en trabajos relacionados al desarrollo.",
         "whyTitle": "¿Por qué yo?",
         "whyDescription": "Porque además de aportar excelentes habilidades técnicas como desarrollador, destaco por mi capacidad perceptiva hacia mis compañeros.Siempre estoy dispuesto a ofrecer mi ayuda cuando se necesite y a aprender de ellos cuando sea necesario, fomentando así un ambiente laboral organizado y eficiente que promueva el crecimiento colectivo y siente las bases para el inicio de mi carrera en este campo."
     },
-    "skills": {
-        "title": "Mis Habilidades",
-        "technologies": "Tecnologías con las que he trabajado"
+    "stack": {
+        "title": "My stack.",
+        "technologies": "Technologies I've worked with",
+        "frontend": "Frontend",
+        "frontendItems": [
+            {
+                "name": "React",
+                "svg": "/svg/react.svg"
+            },
+            {
+                "name": "Redux",
+                "svg": "/svg/redux.svg"
+            },
+            {
+                "name": "TypeScript",
+                "svg": "/svg/typescript.svg"
+            },
+            {
+                "name": "Tailwind",
+                "svg": "/svg/tailwindcss.svg"
+            },
+            {
+                "name": "Next.js",
+                "svg": "/svg/nextjs.svg"
+            },
+            {
+                "name": "JavaScript",
+                "svg": "/svg/javascript.svg"
+            }
+        ],
+        "backend": "Backend",
+        "backendItems": [
+            {
+                "name": "Node.js",
+                "svg": "/svg/nodejs.svg"
+            },
+            {
+                "name": "Express",
+                "svg": "/svg/expressjs.svg"
+            }
+        ],
+        "databases": "Databases",
+        "databasesItems": [
+            {
+                "name": "PostgreSQL",
+                "svg": "/svg/postgresql.svg"
+            }
+        ],
+        "tools": "Tools",
+        "toolsItems": [
+            {
+                "name": "Git",
+                "svg": "/svg/git.svg"
+            }
+        ]
     },
     "projects": {
         "title": "Proyectos",

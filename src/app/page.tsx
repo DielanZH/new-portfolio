@@ -1,7 +1,7 @@
 'use client'
 import Landing from "@/app/components/Landing";
 import About from "@/app/components/About";
-import Skills from "@/app/components/Skills";
+import Stack from "@/app/components/Stack";
 import Projects from "@/app/components/Projects";
 import Contact from "@/app/components/Contact";
 
@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Landing />
       <About />
-      <Skills />
+      <Stack />
       <Projects />
       <Contact />
     </>

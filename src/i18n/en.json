@@ -15,13 +15,65 @@
   },
   "about": {
     "title": "About me",
-    "description": "It has always been of interest to me, the world of technology and development, but I never had the push to delve deeper into it beyond the sphere of video games and news about new PC components. Until the pandemic arrived and amidst the lockdown, that's when I began my self-taught years with tutorials and GitHub repositories, until I was fortunate enough to discover the soyHenry bootcamp.During this stage, in addition to strongly developing my skills as a developer, I learned to work dynamically in teams with agile methodologies, manage the GIT workflow, understand data structures, algorithms, and CSS frameworks.Currently, I am seeking to gain more experience in development-related jobs.",
+    "description": "It has always been of interest to me, the world of technology and development, but I never had the push to delve deeper into it beyond the sphere of video games and news about new PC components. Until the pandemic arrived and amidst the lockdown, that's when I began my self-taught years with tutorials and GitHub repositories, until I was fortunate enough to discover the soyHenry bootcamp.\n\nDuring this stage, in addition to strongly developing my skills as a developer, I learned to work dynamically in teams with agile methodologies, manage the GIT workflow, understand data structures, algorithms, and CSS frameworks.Currently, I am seeking to gain more experience in development-related jobs.",
     "whyTitle": "Why me?",
     "whyDescription": "Because in addition to providing excellent technical skills as a developer, I stand out for my perceptive ability towards my colleagues.I am always ready to offer my help when needed and to learn from them when necessary, thus fostering an organized and efficient work environment that promotes collective growth and lays the groundwork for the start of my career in this field."
   },
-  "skills": {
-    "title": "My Skills",
-    "technologies": "Technologies I've worked with"
+  "stack": {
+    "title": "My stack.",
+    "technologies": "Technologies I've worked with",
+    "frontend": "Frontend",
+    "frontendItems": [
+      {
+        "name": "React",
+        "svg": "/svg/react.svg"
+      },
+      {
+        "name": "Redux",
+        "svg": "/svg/redux.svg"
+      },
+      {
+        "name": "TypeScript",
+        "svg": "/svg/typescript.svg"
+      },
+      {
+        "name": "Tailwind",
+        "svg": "/svg/tailwindcss.svg"
+      },
+      {
+        "name": "Next.js",
+        "svg": "/svg/nextjs.svg"
+      },
+      {
+        "name": "JavaScript",
+        "svg": "/svg/javascript.svg"
+      }
+    ],
+    "backend": "Backend",
+    "backendItems": [
+      {
+        "name": "Node.js",
+        "svg": "/svg/nodejs.svg"
+      },
+      {
+        "name": "Express",
+        "svg": "/svg/expressjs.svg"
+      }
+    ],
+    "databases": "Databases",
+    "databasesItems": [
+      {
+        "name": "PostgreSQL",
+        "svg": "/svg/postgresql.svg"
+      }
+    ],
+    "tools": "Tools",
+    "toolsItems": [
+      {
+        "name": "Git",
+        "svg": "/svg/git.svg"
+      }
+    ]
   },
   "projects": {
     "title": "Projects",

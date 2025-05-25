@@ -1,17 +1,4 @@
 @import "tailwindcss";
-body {
-  font-family: sans-serif;
-  background: white;
-  color: #111;
-}
-
-@font-face {
-  font-family: 'Neue Kabel';
-  src: url('/fonts/NeueKabel-Regular.otf') format('otf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 html {
   scroll-behavior: smooth;

@@ -19,9 +19,29 @@ export interface TranslationSchema {
     whyTitle: string;
     whyDescription: string;
   };
-  skills: {
+  stack: {
     title: string;
     technologies: string;
+    frontend: string;
+    frontendItems: {
+      name: string;
+      svg: string;
+    }[];
+    backend: string;
+    backendItems: {
+      name: string;
+      svg: string;
+    }[];
+    databases: string;
+    databasesItems: {
+      name: string;
+      svg: string;
+    }[];
+    tools: string;
+    toolsItems: {
+      name: string;
+      svg: string;
+    }[];
   };
   projects: {
     title: string;

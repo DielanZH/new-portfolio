@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Navbar from "./components/Navbar";
+import Background from "./components/Background";
+import SmoothScrollProvider from "@/contexts/SmoothScrollProvider";
+
+const inter = Inter({
+  variable: '--font-inter',
+  weight: ['400', '500', '600', '700', '800'],
+  subsets: ['latin'],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -24,13 +27,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
-    <html lang="es">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="es" className={inter.className}>
+      <body className={`${geistSans.variable} ${inter.variable} antialiased text-[#171614]`}>
+        <Background />
+
         <LanguageProvider>
+          <SmoothScrollProvider>
           <Navbar />
-          {children}
+            {children}
+          </SmoothScrollProvider>
         </LanguageProvider>
+
       </body>
     </html>
   );

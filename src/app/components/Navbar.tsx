@@ -4,13 +4,10 @@ import { translations } from "@/i18n";
 import { LanguageContext } from '@/contexts/LanguageContext';
 
 function Navbar() {
-
   const context = useContext(LanguageContext);
-
   if (!context) return null;
 
   const { language, toggleLanguage } = context;
-
   const navbar = translations[language].navbar;
 
   const links = [
@@ -22,26 +19,33 @@ function Navbar() {
   ];
 
   return (
-    <nav>
-      <div className='flex justify-center list-none gap-10'>
+    <header>
+      <nav className="h-auto py-4">
+        <ul className="flex justify-center items-center gap-10 list-none">
+          {links.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className="font-inter tracking-wide text-sm hover:underline"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
 
-        {links.map((link) => (
-          <li key={link.href}>
-            <a href={link.href} className="text-sm aspect-square w-16 hover:underline">
-              {link.label}
-            </a>
+          <li>
+            <button
+              type="button"
+              onClick={toggleLanguage}
+              aria-label="Toggle language"
+            >
+              {language}
+            </button>
           </li>
-        ))}
-
-        <button onClick={toggleLanguage}>
-          {language}
-        </button>
-
-      </div>
-      
-
-    </nav>
-  )
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
-export default Navbar
+export default Navbar;
