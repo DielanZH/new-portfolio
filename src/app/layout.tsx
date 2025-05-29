@@ -32,7 +32,6 @@ export default function RootLayout({
     <html lang="es" className={inter.className}>
       <body className={`${geistSans.variable} ${inter.variable} antialiased text-[#171614]`}>
         <Background />
-
         <LanguageProvider>
           <SmoothScrollProvider>
           <Navbar />
