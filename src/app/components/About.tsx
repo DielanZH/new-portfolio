@@ -19,7 +19,7 @@ function About() {
 
     gsap.fromTo(
       containerRef.current,
-      { y: -50, opacity: 0 },
+      { y: -5, opacity: 0 },
       {
         y: 0,
         opacity: 1,
@@ -40,7 +40,7 @@ function About() {
         trigger: containerRef.current,
         start: 'bottom 55%',
         end: 'bottom 10%',
-        scrub: 2,
+        scrub: 0.02,
       },
     });
 

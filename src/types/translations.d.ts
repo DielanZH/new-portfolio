@@ -46,8 +46,6 @@ export interface TranslationSchema {
   projects: {
     title: string;
     subtitle: string;
-    viewButton: string;
-    codeButton: string;
     projects: {
       name: string;
       description: string;
@@ -60,7 +58,6 @@ export interface TranslationSchema {
   contact: {
     title: string;
     emailPlaceholder: string;
-    messagePlaceholder: string;
-    sendButton: string;
+    autor: string;
   };
 }

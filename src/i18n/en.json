@@ -92,7 +92,7 @@
           "Styled Components",
           "Spoonacular-API"
         ],
-        "image": "/recipes.png",
+        "image": "/images/recipes.webp",
         "github": "https://github.com/DielanZH/Foods",
         "deploy": ""
       },
@@ -109,7 +109,7 @@
           "Styled Components",
           "MercadoPago-API"
         ],
-        "image": "/src/components/projects/images/component-corner.png",
+        "image": "/images/component-corner.webp",
         "github": "https://github.com/solayae/component-corner",
         "deploy": "https://component-corner.vercel.app"
       },
@@ -127,7 +127,7 @@
           "Stripe-API",
           "Nodemailer-API"
         ],
-        "image": "/src/components/projects/images/InstaChef.png",
+        "image": "/images/InstaChef.webp",
         "github": "https://github.com/FrancoInca/InstaChef-Front",
         "deploy": "https://insta-chef.vercel.app"
       },
@@ -141,18 +141,15 @@
           "Styled Components",
           "GitHub-API"
         ],
-        "image": "/src/components/projects/images/GitHubProfile.png",
+        "image": "/images/GitHubProfile.webp",
         "github": "https://github.com/DielanZH/GitHub-profile",
         "deploy": "https://github-profile-dielanzh.vercel.app"
       }
-    ],
-    "viewButton": "View Project",
-    "codeButton": "View Code"
+    ]
   },
   "contact": {
-    "title": "Get in Touch",
-    "emailPlaceholder": "Your email",
-    "messagePlaceholder": "Your message",
-    "sendButton": "Send"
+    "title": "Have a project in mind?",
+    "emailPlaceholder": "danieldiaz-123@hotmail.com",
+    "autor": "Design and developed by Daniel Diaz"
   }
 }
