@@ -1,82 +1,96 @@
-import { LanguageContext } from '@/contexts/LanguageContext';
-import React, { useContext } from 'react';
-import { translations } from "@/i18n";
+import React, { useRef, useContext } from 'react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
+import { LanguageContext } from '@/contexts/LanguageContext';
+import { translations } from "@/i18n";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function Projects() {
 
   const context = useContext(LanguageContext);
-  if (!context) return null;
 
-  const { language } = context;
-  const { title, subtitle, projects } =
-    translations[language].projects;
+  const language = context?.language || 'es';
+  const { title, subtitle, projects } = translations[language].projects;
+
+  const projectsRef = useRef<(HTMLDivElement | null)[]>([]);
+
+  useGSAP(() => {
+
+    projectsRef.current.forEach((el) => {
+      if (el) {
+        gsap.from(el, {
+          opacity: 0,
+          y: 0,
+          duration: 0.8,
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 85%',
+            end: 'bottom 45%',
+            toggleActions: 'play reverse play reverse',
+          },
+        });
+      }
+    });
+  }, {
+    dependencies: [language],
+    revertOnUpdate: true,
+  });
 
   return (
-    <section>
+    <section id='projects'>
 
-      <div className="">
+      <div className="w-[87vw]">
 
         <h2 className="text-5xl font-bold mb-4">{title}</h2>
-        <p className="text-lg text-gray-700">{subtitle}</p>
-
+        <p className="text-lg text-gray-700 mb-5">{subtitle}</p>
 
         {projects.map((project, idx) => (
-          <div key={idx} className={`mb-8 flex gap-5 ${idx % 2 === 1 ? 'flex-row-reverse' : ''
-            }`}>
-
+          <div
+            key={idx}
+            ref={el => { projectsRef.current[idx] = el }}
+            className={`flex mb-8 gap-5 ${idx % 2 === 1 ? 'flex-row-reverse' : 'flex-row'}`}
+          >
+            {/* Imagen */}
             {project.image && (
               <div className="flex-shrink-0">
-                <Image src={project.image} alt={project.name} width={600} height={600} className="mb-2" />
+                <Image src={project.image} alt={project.name} width={600} height={400} style={{ height: "auto" }} className="" />
               </div>
             )}
 
+            {/* Info */}
             <div className={`flex-1 ${idx % 2 === 1 ? 'text-right' : 'text-left'}`}>
 
-              <h3 className="text-xl font-bold">{project.name}</h3>
+              <h3 className="text-3xl font-extrabold mb-2">{project.name}</h3>
 
-              <p className="mb-2 bg-red-600">{project.description}</p>
+              <p className=''>{project.description}</p>
 
-              <div className={`flex flex-wrap gap-2 mb-2 ${idx % 2 === 1 ? 'justify-end' : 'justify-start'}`}>
+              <div className={`flex flex-wrap gap-2 py-4 mb-1 ${idx % 2 === 1 ? 'justify-end' : 'justify-start'}`}>
                 {project.technologies.map((tech) => (
-                  <span key={tech} className="bg-gray-200 px-2 py-1 rounded text-xs">{tech}</span>
+                  <span key={tech} className="bg-gradient-to-r from-sky-900 to-violet-800 bg-clip-text text-transparent px-1 rounded text-base font-xs">{tech}</span>
                 ))}
               </div>
 
               <div className={`flex gap-4 ${idx % 2 === 1 ? 'justify-end' : 'justify-start'}`}>
-
                 {project.deploy && (
-                  <a href={project.deploy} target="_blank" rel="noopener noreferrer" className="bg-">
-                    <Image
-                      src="/svg/external-link.svg"
-                      alt="Deploy"
-                      width={28}
-                      height={28}
-                      className="inline-block mt-0.5"
-                    />
+                  <a href={project.deploy} target="_blank" rel="noopener noreferrer">
+                    <Image src="/svg/external-link.svg" alt="Deploy" width={28} height={28} style={{ height: "auto" }} className="inline-block mt-0.5" />
                   </a>
                 )}
-
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="bg-[]">
-                  <Image
-                    src="/svg/github.svg"
-                    alt="GitHub"
-                    width={30}
-                    height={30}
-                    className="inline-block"
-                  />
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <Image src="/svg/github.svg" alt="GitHub" width={30} height={30} className="inline-block" />
                 </a>
-
               </div>
-
             </div>
 
           </div>
         ))}
-      </div>
 
+      </div>
     </section>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

@@ -20,8 +20,8 @@
         "whyDescription": "Porque además de aportar excelentes habilidades técnicas como desarrollador, destaco por mi capacidad perceptiva hacia mis compañeros.Siempre estoy dispuesto a ofrecer mi ayuda cuando se necesite y a aprender de ellos cuando sea necesario, fomentando así un ambiente laboral organizado y eficiente que promueva el crecimiento colectivo y siente las bases para el inicio de mi carrera en este campo."
     },
     "stack": {
-        "title": "My stack.",
-        "technologies": "Technologies I've worked with",
+        "title": "Mi stack.",
+        "technologies": "Tecnologías y herramientas que manejo",
         "frontend": "Frontend",
         "frontendItems": [
             {
@@ -76,7 +76,7 @@
         ]
     },
     "projects": {
-        "title": "Proyectos",
+        "title": "Proyectos.",
         "subtitle": "Mira los proyectos en los que trabajé recientemente",
         "projects": [
             {

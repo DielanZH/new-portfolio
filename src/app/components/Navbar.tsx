@@ -21,19 +21,19 @@ function Navbar() {
   return (
     <header>
       <nav className="h-auto py-4">
-        <ul className="flex justify-center items-center gap-10 list-none">
+        <div className="flex justify-center items-center gap-10 list-none">
           {links.map((link) => (
-            <li key={link.href}>
+            <div key={link.href}>
               <a
                 href={link.href}
                 className="font-inter tracking-wide text-sm hover:underline"
               >
                 {link.label}
               </a>
-            </li>
+            </div>
           ))}
 
-          <li>
+          <div>
             <button
               type="button"
               onClick={toggleLanguage}
@@ -41,8 +41,8 @@ function Navbar() {
             >
               {language}
             </button>
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </header>
   );

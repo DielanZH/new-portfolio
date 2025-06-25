@@ -75,7 +75,7 @@ function Stack() {
 
 
   return (
-    <section ref={sectionRef} >
+    <section ref={sectionRef} id='stack' >
       <h1 className='slide-up text-5xl w-fit font-black'>{stack.title}</h1>
 
       <p className='slide-up w-fit py-5'>{stack.technologies}</p>

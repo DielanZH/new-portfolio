@@ -3,15 +3,20 @@ import { LanguageContext } from '@/contexts/LanguageContext';
 import React, { useContext, useRef } from 'react'
 import { translations } from "@/i18n";
 import { gsap } from 'gsap';
-import { SplitText } from 'gsap/SplitText';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { SplitText } from 'gsap/all';
 
 function Landing() {
     const context = useContext(LanguageContext);
     const containerRef = useRef<HTMLDivElement>(null);
 
-    gsap.registerPlugin(SplitText, useGSAP, ScrollTrigger);
+    const language = context?.language || 'es';
+    const { greeting, name, specialization, description, resumeLink } =
+        translations[language].landing;
+
+    gsap.registerPlugin(useGSAP, ScrollTrigger);
+    gsap.registerPlugin(SplitText)
 
     useGSAP(() => {
         gsap.set(containerRef.current, { opacity: 1 });
@@ -28,8 +33,7 @@ function Landing() {
                         trigger: containerRef.current,
                         start: "top 70%",
                         end: "bottom 35%",
-                    },
-
+                    }
                 });
             }
         });
@@ -48,35 +52,37 @@ function Landing() {
             { y: 0 },
             { y: -50, opacity: 0, stagger: 0.05 },
         );
+
+    }, {
+        dependencies: [language],
+        revertOnUpdate: true,
     });
 
-    if (!context) return null;
-
-    const { language } = context;
-    const { greeting, name, specialization, description, resumeLink } =
-        translations[language].landing;
-
     return (
-        <section>
-            <div ref={containerRef} className='opacity-0 items-center justify-center'>
-                <h3 className='font-semibold'>{greeting}</h3>
+        <section className='' id='landing'>
+            <div ref={containerRef} key={language} className='opacity-0 items-center justify-center'>
+                <p className='font-semibold w-fit'>{greeting}</p>
                 <h1 className='text-9xl mb-5 font-black'>{name}</h1>
                 <p className='mb-7 font-semibold'>{specialization}</p>
-                <div className='mr-48 mb-7'>
+                <div className='w-[75vw] mb-7'>
                     {description.split('\n\n').map((el, idx) => (
                         <p key={idx}
-                            className='tracking-wide mb-3 max-w-[75vw] font-semibold'>
+                            className='tracking-wider font-semibold'>
                             {el}
                         </p>
                     ))}
                 </div>
+
                 <a
                     href='https://drive.google.com/file/d/1ZkWp7v0vFU0n5AX_ujMGY6xY5DhW6MhV/view'
                     target='_blank'
                     className='font-semibold'
                 >
-                    {resumeLink}
+                    <span className="hover:bg-gradient-to-r from-sky-900 to-violet-800 bg-clip-text hover:text-transparent">
+                        {resumeLink}
+                    </span>
                 </a>
+
             </div>
         </section>
     )

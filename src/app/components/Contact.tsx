@@ -11,14 +11,20 @@ function Contact() {
   const { title, emailPlaceholder, autor } = translations[language].contact;
 
   return (
-    <div className="flex flex-col items-center justify-center mt-15 py-10">
+    <div id='contact' className="flex flex-col items-center justify-center mt-15 py-10">
 
       <h1 className='w-fit font-medium pb-3'>{title}</h1>
 
-      <a className='text-5xl font-black pb-3' href={`mailto:${emailPlaceholder}`}>{emailPlaceholder}</a>
+      <a href={`mailto:${emailPlaceholder}`}>
+
+        <span className="text-5xl font-black bg-clip-text hover:bg-gradient-to-r from-sky-900 to-violet-800 hover:text-transparent">
+          {emailPlaceholder}
+        </span>
+
+      </a>
 
       <p className='text-md'>{autor}</p>
-  
+
     </div>
   )
 }
