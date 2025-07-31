@@ -76,11 +76,11 @@ function Projects() {
               <div className={`flex gap-4 ${idx % 2 === 1 ? 'justify-end' : 'justify-start'}`}>
                 {project.deploy && (
                   <a href={project.deploy} target="_blank" rel="noopener noreferrer">
-                    <Image src="/svg/external-link.svg" alt="Deploy" width={28} height={28} style={{ height: "auto" }} className="inline-block mt-0.5" />
+                    <Image src="/svg/external-link.svg" alt="Deploy" width={28} height={28} style={{ height: "auto" }} className="inline-block mt-0.5 transition-transform duration-200 hover:scale-102" />
                   </a>
                 )}
                 <a href={project.github} target="_blank" rel="noopener noreferrer">
-                  <Image src="/svg/github.svg" alt="GitHub" width={30} height={30} className="inline-block" />
+                  <Image src="/svg/github.svg" alt="GitHub" width={30} height={30} className="inline-block transition-transform duration-200 hover:scale-102" />
                 </a>
               </div>
             </div>

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import Navbar from "./components/Navbar";
 import Background from "./components/Background";
 import SmoothScrollProvider from "@/contexts/SmoothScrollProvider";
+import Navbar from "./components/Navbar";
 
 const inter = Inter({
   variable: '--font-inter',
@@ -33,8 +33,8 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${inter.variable} antialiased text-[#171614]`}>
         <Background />
         <LanguageProvider>
-          <SmoothScrollProvider>
           <Navbar />
+          <SmoothScrollProvider>
             {children}
           </SmoothScrollProvider>
         </LanguageProvider>

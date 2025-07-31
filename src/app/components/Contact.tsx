@@ -17,13 +17,13 @@ function Contact() {
 
       <a href={`mailto:${emailPlaceholder}`}>
 
-        <span className="text-5xl font-black bg-clip-text hover:bg-gradient-to-r from-sky-900 to-violet-800 hover:text-transparent">
+        <span className="inline-block text-5xl font-black bg-clip-text hover:bg-gradient-to-r from-sky-900 to-violet-800 hover:text-transparent transition-transform duration-200 hover:scale-101">
           {emailPlaceholder}
         </span>
 
       </a>
 
-      <p className='text-md'>{autor}</p>
+      <p className='text-md pt-2'>{autor}</p>
 
     </div>
   )

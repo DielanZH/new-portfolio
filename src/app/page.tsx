@@ -10,6 +10,7 @@ export default function Home() {
     <>
       <Landing />
       <About />
+
       <Stack />
       <Projects />
       <Contact />

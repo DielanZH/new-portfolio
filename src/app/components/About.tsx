@@ -60,7 +60,7 @@ function About() {
   const about = translations[language].about;
 
   return (
-    <section className='flex flex-col h-screen'>
+    <section id='about' className='flex flex-col h-screen'>
       <div ref={containerRef}>
         <h1 className='text-5xl mb-5 font-black'>
           {about.title}

@@ -59,7 +59,7 @@ function Landing() {
     });
 
     return (
-        <section className='' id='landing'>
+        <section className='mt-10' id='landing'>
             <div ref={containerRef} key={language} className='opacity-0 items-center justify-center'>
                 <p className='font-semibold w-fit'>{greeting}</p>
                 <h1 className='text-9xl mb-5 font-black'>{name}</h1>
@@ -78,7 +78,7 @@ function Landing() {
                     target='_blank'
                     className='font-semibold'
                 >
-                    <span className="hover:bg-gradient-to-r from-sky-900 to-violet-800 bg-clip-text hover:text-transparent">
+                    <span className="inline-block hover:bg-gradient-to-r from-sky-900 to-violet-800 bg-clip-text hover:text-transparent transition-transform duration-200 hover:scale-102">
                         {resumeLink}
                     </span>
                 </a>
