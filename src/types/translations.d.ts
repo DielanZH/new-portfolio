@@ -39,7 +39,7 @@ export interface TranslationSchema {
     }[];
     tools: string;
     toolsItems: {
-      name: string;
+      name?: string;
       svg: string;
     }[];
   };
