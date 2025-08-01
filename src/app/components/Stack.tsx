@@ -82,15 +82,15 @@ function Stack() {
 
       {sections.map(({ title, items }) => (
 
-        <div key={title} className=" py-10 pr-10 grid grid-cols-[1fr_2fr]">
+        <div key={title} className="py-10 pr-10 grid grid-cols-[1fr_2fr]">
 
           <h3 className='slide-up text-5xl w-fit font-bold'>{title}</h3>
 
           <ul className="flex flex-wrap gap-4">
             {items.map((tech) => (
-              <li key={tech.name} className="slide-up flex items-center gap-2 p-2 w-1/4">
+              <li key={tech.name || tech.svg} className="slide-up flex items-center gap-2 p-2 w-1/4">
 
-                <Image src={tech.svg} alt={tech.name} width={45} height={45} />
+                <Image className={!tech.name ? 'w-full max-h-10 object-contain' : ''} src={tech.svg} alt={tech.name || 'tech'} width={45} height={45} />
 
                 <span className='text-3xl font-semibold'>{tech.name}</span>
 
