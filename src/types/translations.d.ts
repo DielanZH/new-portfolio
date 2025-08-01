@@ -24,17 +24,17 @@ export interface TranslationSchema {
     technologies: string;
     frontend: string;
     frontendItems: {
-      name: string;
+      name?: string;
       svg: string;
     }[];
     backend: string;
     backendItems: {
-      name: string;
+      name?: string;
       svg: string;
     }[];
     databases: string;
     databasesItems: {
-      name: string;
+      name?: string;
       svg: string;
     }[];
     tools: string;
