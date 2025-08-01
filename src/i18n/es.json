@@ -47,6 +47,10 @@
             {
                 "name": "JavaScript",
                 "svg": "/svg/javascript.svg"
+            },
+            {
+               
+                "svg": "/svg/gsap-black.svg"
             }
         ],
         "backend": "Backend",

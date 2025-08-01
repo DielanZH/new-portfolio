@@ -61,7 +61,9 @@ function About() {
 
   return (
     <section id='about' className='flex flex-col h-screen'>
-      <div ref={containerRef}>
+      <div ref={containerRef}
+        className=' pt-8'
+      >
         <h1 className='text-5xl mb-5 font-black'>
           {about.title}
         </h1>

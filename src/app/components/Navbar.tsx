@@ -56,19 +56,20 @@ function Navbar() {
         ref={headerRef}
         className="h-auto py-4"
         style={{
-          background: `linear-gradient(0deg,rgba(190, 219, 212, 0) 70%, rgba(194, 186, 207, 1) 100%)`,
-          backgroundImage: `url('/grid-bg.svg')`,
-          backgroundSize: "180px 180px, cover",
-          backgroundBlendMode: "normal",
-          backdropFilter: "blur(8px)",
+          backgroundImage: 'url(/grid-bg.svg)',
+          backgroundSize: '1080px 1080px, cover',
+          backdropFilter: 'blur(2000px)',
+           backgroundColor: 'rgba(255, 255, 255, 0.1)'
         }}
       >
+
         <div className="relative flex justify-center items-center gap-10 list-none w-fit h-full mx-auto">
+
           {links.map((link) => (
             <div key={link.href}>
               <a
                 href={link.href}
-                className="font-inter font-semibold tracking-widest text-sm hover:underline"
+                className="inline-block font-inter hover:underline transition-transform duration-200 hover:scale-102"
                 onClick={(e) => {
                   e.preventDefault();
                   gsap.to(window, {
@@ -77,7 +78,9 @@ function Navbar() {
                   });
                 }}
               >
-                {link.label}
+                <span className="font-semibold tracking-widest text-md">
+                  {link.label}
+                </span>
               </a>
             </div>
           ))}
