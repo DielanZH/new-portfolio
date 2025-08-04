@@ -74,7 +74,7 @@ function Landing() {
                 </div>
 
                 <a
-                    href={language === 'es' ? `https://drive.google.com/file/d/1KSS3h5y5cgBadto6UfPlMs8Mq_kt_aFb/view?usp=sharing` : `https://drive.google.com/file/d/1hQnp_hZXAkHC_DElZ1iTYQ4fZupiSOkJ/view?usp=sharing`}
+                    href={language === 'es' ? `https://drive.google.com/file/d/1YWAiRX2PPYWi3b3rZQBm_aiG39o5EYGw/view?usp=sharing` : `https://drive.google.com/file/d/1VfC0gngFW4bKccL9Crcq9jnJnv1tXiCH/view?usp=sharing`}
                     target='_blank'
                     className='font-semibold'
                 >
