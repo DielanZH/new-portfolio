@@ -6,6 +6,18 @@ function Background() {
     const bgDivRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
+        const updateMousePosition = (ev: MouseEvent) => {
+            if (!bgDivRef.current) return;
+            const { clientX, clientY } = ev;
+            bgDivRef.current.style.setProperty('--mouse-x', `${clientX}px`);
+            bgDivRef.current.style.setProperty('--mouse-y', `${clientY}px`);
+        };
+
+        window.addEventListener("mousemove", updateMousePosition);
+        return () => window.removeEventListener("mousemove", updateMousePosition);
+    }, [])
+
+    useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
