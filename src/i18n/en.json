@@ -2,7 +2,7 @@
   "landing": {
     "greeting": "Hi, my name is",
     "name": "Daniel Diaz",
-    "specialization": "I am a Full Stack Developer specializing in Front-end development.",
+    "specialization": "I am a Fullstack Developer specializing in Frontend development",
     "description": "One of my greatest motivations in this world is learning. I began my journey as a self-taught developer through tutorials and GitHub repositories until I was fortunate enough to discover the soyHenry bootcamp.\n\nDuring this stage, besides significantly developing my coding skills, I learned to work dynamically in a team using agile methodologies, managing the GIT workflow, understanding data structures, algorithms, and CSS frameworks.",
     "resumeLink": "Check out my resume"
   },

@@ -61,13 +61,14 @@ function Landing() {
     return (
         <section className='mt-10' id='landing'>
             <div ref={containerRef} key={language} className='opacity-0 items-center justify-center'>
-                <p className='font-semibold w-fit'>{greeting}</p>
-                <h1 className='text-9xl mb-5 font-black'>{name}</h1>
-                <p className='mb-7 font-semibold'>{specialization}</p>
+                <p className='font-semibold w-fit sm:text-lg'>{greeting}</p>
+                <h1 className='text-9xl mb-5 font-black sm:text-7xl'>{name}</h1>
+                <p className='lg:mb-5 sm:mb-1 font-semibold sm:text-lg sm:w-[60vw]'>{specialization}</p>
+
                 <div className='w-[75vw] mb-7'>
                     {description.split('\n\n').map((el, idx) => (
                         <p key={idx}
-                            className='tracking-wider font-semibold'>
+                            className='tracking-wider font-semibold sm:text-lg'>
                             {el}
                         </p>
                     ))}
