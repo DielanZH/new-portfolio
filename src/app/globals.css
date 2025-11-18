@@ -24,3 +24,12 @@ a {
   opacity: var(--glow-opacity, 0);
   mask: radial-gradient(circle farthest-corner at var(--mouse-x) var(--mouse-y), rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
 }
+
+.no-box-hover {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.no-box-hover:hover {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}

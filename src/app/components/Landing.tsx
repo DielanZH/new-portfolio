@@ -62,10 +62,10 @@ function Landing() {
         <section className='mt-10' id='landing'>
             <div ref={containerRef} key={language} className='opacity-0 items-center justify-center'>
                 <p className='font-semibold w-fit sm:text-lg'>{greeting}</p>
-                <h1 className='text-9xl mb-5 font-black sm:text-7xl'>{name}</h1>
-                <p className='lg:mb-5 sm:mb-1 font-semibold sm:text-lg sm:w-[60vw]'>{specialization}</p>
+                <h1 className='sm:text-7xl mb-5 font-black lg:text-9xl'>{name}</h1>
+                <p className='sm:mb-1 font-semibold sm:text-lg sm:w-[60vw] lg:mb-5'>{specialization}</p>
 
-                <div className='w-[75vw] mb-7'>
+                <div className='w-[75vw] mb-5 sm:mt-5'>
                     {description.split('\n\n').map((el, idx) => (
                         <p key={idx}
                             className='tracking-wider font-semibold sm:text-lg'>
@@ -79,7 +79,12 @@ function Landing() {
                     target='_blank'
                     className='font-semibold'
                 >
-                    <span className="inline-block hover:bg-gradient-to-r from-sky-900 to-violet-800 bg-clip-text hover:text-transparent transition-transform duration-200 hover:scale-102">
+                    <span
+                        className="inline-block text-lg
+                               bg-gradient-to-r from-sky-900 to-violet-800 bg-clip-text text-transparent
+                               transition-transform duration-200 sm:hover:scale-[1.02]"
+                        style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+                    >
                         {resumeLink}
                     </span>
                 </a>
