@@ -78,21 +78,28 @@ function Stack() {
     <section ref={sectionRef} id='stack' >
       <h1 className='slide-up text-5xl w-fit font-black'>{stack.title}</h1>
 
-      <p className='slide-up w-fit py-5'>{stack.technologies}</p>
+      <p className='slide-up w-fit sm:pt-5 lg:py-5'>{stack.technologies}</p>
 
       {sections.map(({ title, items }) => (
 
-        <div key={title} className="py-10 pr-10 grid grid-cols-[1fr_2fr]">
+        <div key={title} className="sm:py-5 lg:py-10 pr-10 grid lg:grid-cols-[1fr_2fr] sm:grid-cols-1">
 
-          <h3 className='slide-up text-5xl w-fit font-bold'>{title}</h3>
+          <h3 className='slide-up sm:text-4xl lg:text-5xl w-fit font-bold sm:mb-2'>{title}</h3>
 
-          <ul className="flex flex-wrap gap-4">
+          <ul className="flex flex-wrap lg:gap-2 sm:gap-x-12 sm:gap-y-4">
             {items.map((tech) => (
-              <li key={tech.name || tech.svg} className="slide-up flex items-center gap-2 p-2 w-1/4">
+              <li key={tech.name || tech.svg} className="slide-up flex items-center gap-2 sm:gap-3 p-2 w-1/4">
 
-                <Image className={!tech.name ? 'w-full max-h-10 object-contain' : ''} src={tech.svg} alt={tech.name || 'tech'} width={45} height={45} />
 
-                <span className='text-3xl font-semibold'>{tech.name}</span>
+                  <Image className={!tech.name ? 'w-full lg:max-h-10 object-contain' : ''}
+                    src={tech.svg}
+                    alt={tech.name || 'tech'}
+                    height={37}
+                    width={37}
+                  />
+
+
+                <span className='sm:text-2xl lg:text-3xl font-semibold'>{tech.name}</span>
 
               </li>
             ))}
