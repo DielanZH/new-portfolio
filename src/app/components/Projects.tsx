@@ -65,11 +65,11 @@ function Projects() {
 
               <h3 className="text-3xl font-extrabold mb-2">{project.name}</h3>
 
-              <p className=''>{project.description}</p>
+              <p className='sm:font-semibold lg:font-normal'>{project.description}</p>
 
               <div className={`flex flex-wrap gap-2 py-4 mb-1 ${idx % 2 === 1 ? 'justify-end' : 'justify-start'}`}>
                 {project.technologies.map((tech) => (
-                  <span key={tech} className="bg-gradient-to-r from-sky-900 to-violet-800 bg-clip-text text-transparent px-1 rounded text-base font-xs">{tech}</span>
+                  <span key={tech} style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }} className="bg-gradient-to-r from-sky-900 to-violet-800 bg-clip-text text-transparent px-1 rounded sm:text-base sm:font-semibold lg:text-base lg:font-xs">{tech}</span>
                 ))}
               </div>
 

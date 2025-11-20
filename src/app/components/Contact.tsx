@@ -17,13 +17,16 @@ function Contact() {
 
       <a href={`mailto:${emailPlaceholder}`}>
 
-        <span className="inline-block text-5xl font-black bg-clip-text hover:bg-gradient-to-r from-sky-900 to-violet-800 hover:text-transparent transition-transform duration-200 hover:scale-101">
+        <span className="inline-block font-black transition-transform duration-200 hover:scale-101
+        lg:text-5xl lg:hover:bg-gradient-to-r lg:from-sky-900 lg:to-violet-800 lg:bg-clip-text lg:hover:text-transparent
+        sm:text-4xl sm:bg-gradient-to-r sm:from-sky-900 sm:to-violet-800 sm:bg-clip-text sm:text-transparent"
+          style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
           {emailPlaceholder}
         </span>
 
       </a>
 
-      <p className='text-md pt-2'>{autor}</p>
+      <p className='text-md pt-2 sm:pb-4'>{autor}</p>
 
     </div>
   )
