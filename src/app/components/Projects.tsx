@@ -42,7 +42,7 @@ function Projects() {
   return (
     <section id='projects'>
 
-      <div className="w-[87vw]">
+      <div className="sm:w-full lg:w-[87vw]">
 
         <h2 className="text-5xl font-bold mb-4">{title}</h2>
         <p className="text-lg text-gray-700 mb-5">{subtitle}</p>
@@ -51,17 +51,17 @@ function Projects() {
           <div
             key={idx}
             ref={el => { projectsRef.current[idx] = el }}
-            className={`flex mb-8 gap-5 ${idx % 2 === 1 ? 'flex-row-reverse' : 'flex-row'}`}
+            className={`sm:grid lg:flex mb-8 gap-5 ${idx % 2 === 1 ? 'flex-row-reverse' : 'flex-row'}`}
           >
             {/* Imagen */}
             {project.image && (
-              <div className="flex-shrink-0">
+              <div className="sm:grid lg:flex-shrink-0">
                 <Image src={project.image} alt={project.name} width={600} height={400} style={{ height: "auto" }} className="" />
               </div>
             )}
 
             {/* Info */}
-            <div className={`flex-1 ${idx % 2 === 1 ? 'text-right' : 'text-left'}`}>
+            <div className={`sm:grid lg:flex-1 ${idx % 2 === 1 ? 'text-right' : 'text-left'}`}>
 
               <h3 className="text-3xl font-extrabold mb-2">{project.name}</h3>
 
