@@ -59,11 +59,14 @@ function Navbar() {
           backgroundImage: 'url(/grid-bg.svg)',
           backgroundSize: '1080px 1080px, cover',
           backdropFilter: 'blur(2000px)',
-           backgroundColor: 'rgba(255, 255, 255, 0.1)'
+          backgroundColor: 'rgba(255, 255, 255, 0.1)'
         }}
       >
 
-        <div className="relative flex justify-center items-center gap-10 list-none w-fit h-full mx-auto">
+        <div className="relative flex justify-center items-center list-none w-fit h-full
+                sm:gap-4 sm:ml-5
+                lg:gap-10 lg:mx-auto"
+        >
 
           {links.map((link) => (
             <div key={link.href}>

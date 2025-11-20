@@ -28,11 +28,11 @@ function Landing() {
                 gsap.from(self.lines, {
                     y: 50,
                     opacity: 0,
-                    stagger: 0.3,
+                    stagger: 0.15,
                     scrollTrigger: {
                         trigger: containerRef.current,
-                        start: "top 70%",
-                        end: "bottom 35%",
+                        start: "top 60%",
+                        end: "bottom 40%",
                     }
                 });
             }
@@ -59,11 +59,11 @@ function Landing() {
     });
 
     return (
-        <section className='mt-10' id='landing'>
-            <div ref={containerRef} key={language} className='opacity-0 items-center justify-center'>
+        <section className='' id='landing'>
+            <div ref={containerRef} key={language} className='mt-10 opacity-0 grid grid-cols-1 mx-auto max-w-[1200px]'>
                 <p className='font-semibold w-fit sm:text-lg'>{greeting}</p>
                 <h1 className='sm:text-7xl mb-5 font-black lg:text-9xl'>{name}</h1>
-                <p className='sm:mb-1 font-semibold sm:text-lg sm:w-[60vw] lg:mb-5'>{specialization}</p>
+                <p className='sm:mb-1 font-semibold sm:text-lg sm:w-[60vw] lg:mb-0'>{specialization}</p>
 
                 <div className='w-[75vw] mb-5 sm:mt-5'>
                     {description.split('\n\n').map((el, idx) => (
