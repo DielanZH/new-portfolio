@@ -22,12 +22,12 @@ function About() {
       { y: -5, opacity: 0 },
       {
         y: 0,
-        opacity: 1,
+        opacity: 1.3,
         scrollTrigger: {
           trigger: containerRef.current,
-          start: 'top 90%',
+          start: 'top 95%',
           end: 'bottom 50%',
-          scrub: 0.02,
+          scrub: 0.05,
         },
       }
     );

@@ -33,3 +33,11 @@ a {
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
+
+/* Responsive: pantallas móviles menores a 640px */
+@media (max-width: 640px) {
+  section {
+    /* Reduce padding para ganar espacio en vertical */
+    padding: 2rem 1rem;
+  }
+}
