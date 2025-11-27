@@ -60,8 +60,11 @@ function Landing() {
 
     return (
         <section className='mt-16 sm:mt-0' id='landing'>
-            <div ref={containerRef} key={language} className='mt-10 opacity-0 grid grid-cols-1 mx-auto max-w-[1200px]'>
-                <p className='font-semibold w-fit sm:text-lg'>{greeting}</p>
+            <div ref={containerRef} 
+            aria-label='Presentacion'
+            key={language} 
+            className='mt-10 opacity-0 grid grid-cols-1 mx-auto max-w-[1200px]'>
+                <h2 className='font-semibold w-fit sm:text-lg'>{greeting}</h2>
 
                 <h1 className='
                 font-black
