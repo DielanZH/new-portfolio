@@ -83,6 +83,21 @@
     "subtitle": "Take a look at the projects I've worked on",
     "projects": [
       {
+        "name": "Portfolio",
+        "description": "I developed my portfolio using Next.js, React, and TypeScript, applying a mobile-first approach to ensure a smooth experience across all devices. I used Tailwind CSS to achieve a modern and responsive design, and organized the project architecture with reusable components and best practices. Additionally, I optimized images, routes, and load times to improve the overall performance of the application.",
+        "technologies": [
+          "TypeScript",
+          "React.js",
+          "Next.js",
+          "Tailwind CSS",
+          "GSAP",
+          "Node.js"
+        ],
+        "image": "/images/new_portfolio.webp",
+        "github": "https://github.com/DielanZH/new-portfolio",
+        "deploy": "https://new-portfolio-dielanzh.vercel.app"
+      },
+      {
         "name": "GitHub Profile",
         "description": "I took on a challenge from devChallenges to create a SPA that utilizes the GitHub API to fetch and display information about repositories and users. Additionally, I implemented responsive design principles to make the app accessible and functional across various devices and screen sizes.",
         "technologies": [
