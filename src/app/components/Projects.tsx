@@ -56,7 +56,7 @@ function Projects() {
             {/* Imagen */}
             {project.image && (
               <div className="sm:grid lg:flex-shrink-0">
-                <Image src={project.image} alt={project.name} width={600} height={400} style={{ height: "auto" }} className="" />
+                <Image src={project.image} alt={project.name} width={600} height={400} style={{ height: "auto" }} sizes="(max-width: 768px) 100vw, 380px" className="" />
               </div>
             )}
 
