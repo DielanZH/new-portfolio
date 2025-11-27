@@ -83,7 +83,7 @@ function Navbar() {
 
       <button ref={upRef} className='fixed bottom-4 right-4 cursor-pointer sm:hidden'
         onClick={() => gsap.to(window, { scrollTo: 0, duration: 1.2 })}>
-        <Image src="/svg/up-arrow.svg" alt="Logo" width={38} height={38} />
+        <Image src="/svg/up-arrow.svg" alt="Logo" width={36} height={36} />
       </button>
 
       <nav
