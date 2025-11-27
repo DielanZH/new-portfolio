@@ -49,7 +49,6 @@
                 "svg": "/svg/javascript.svg"
             },
             {
-               
                 "svg": "/svg/gsap-black.svg"
             }
         ],
@@ -84,38 +83,18 @@
         "subtitle": "Mira los proyectos en los que trabajé recientemente",
         "projects": [
             {
-                "name": "App de recetas",
-                "description": "Una SPA que consume datos de una API externa, y permite la visualización de información general y detallada de más de 500,000 recetas, entre las funcionalidades que dispone esta APP está el filtrado y ordenamiento de recetas por diferentes variables como si son traidos de la API o la DB, healthscore, nombre, calificación, además de la creación de nuevas recetas mediante un formulario controlado.",
+                "name": "GitHub Profile",
+                "description": "Acepté un desafío de devChallenges para crear una SPA que utiliza la API de GitHub para obtener y mostrar información sobre repositorios y usuarios. Además, implementé principios de diseño responsive para hacer que la aplicación sea accesible y funcional en varios dispositivos y tamaños de pantalla.",
                 "technologies": [
                     "JavaScript",
                     "React.js",
-                    "Redux.js",
-                    "Node.js",
-                    "Express",
-                    "PostgreSQL",
+                    "React-router",
                     "Styled Components",
-                    "Spoonacular-API"
+                    "GitHub-API"
                 ],
-                "image": "/images/recipes.webp",
-                "github": "https://github.com/DielanZH/Foods",
-                "deploy": ""
-            },
-            {
-                "name": "Component-Corner",
-                "description": "Colaboré como desarrollador frontend en el proyecto grupal Component-Corner durante el bootcamp de Henry. Me encargue de implementar interfaces interactivas y responsivas y contribuí en la arquitectura y diseño de los componentes, enfocándome en buenas prácticas y código limpio. Trabajé estrechamente con un equipo multidisciplinario, participando en reuniones de planificación, revisiones de código y resolución de desafíos técnicos.",
-                "technologies": [
-                    "JavaScript",
-                    "Node.js",
-                    "React.js",
-                    "Redux.js",
-                    "Express",
-                    "PostgreSQL",
-                    "Styled Components",
-                    "MercadoPago-API"
-                ],
-                "image": "/images/component-corner.webp",
-                "github": "https://github.com/solayae/component-corner",
-                "deploy": "https://component-corner.vercel.app"
+                "image": "/images/GitHubProfile.webp",
+                "github": "https://github.com/DielanZH/GitHub-profile",
+                "deploy": "https://github-profile-dielanzh.vercel.app"
             },
             {
                 "name": "Insta-Chef",
@@ -136,18 +115,38 @@
                 "deploy": "https://insta-chef.vercel.app"
             },
             {
-                "name": "GitHub Profile",
-                "description": "Acepté un desafío de devChallenges para crear una SPA que utiliza la API de GitHub para obtener y mostrar información sobre repositorios y usuarios. Además, implementé principios de diseño responsive para hacer que la aplicación sea accesible y funcional en varios dispositivos y tamaños de pantalla.",
+                "name": "Component-Corner",
+                "description": "Colaboré como desarrollador frontend en el proyecto grupal Component-Corner durante el bootcamp de Henry. Me encargue de implementar interfaces interactivas y responsivas y contribuí en la arquitectura y diseño de los componentes, enfocándome en buenas prácticas y código limpio. Trabajé estrechamente con un equipo multidisciplinario, participando en reuniones de planificación, revisiones de código y resolución de desafíos técnicos.",
+                "technologies": [
+                    "JavaScript",
+                    "Node.js",
+                    "React.js",
+                    "Redux.js",
+                    "Express",
+                    "PostgreSQL",
+                    "Styled Components",
+                    "MercadoPago-API"
+                ],
+                "image": "/images/component-corner.webp",
+                "github": "https://github.com/solayae/component-corner",
+                "deploy": "https://component-corner.vercel.app"
+            },
+            {
+                "name": "App de recetas",
+                "description": "Una SPA que consume datos de una API externa, y permite la visualización de información general y detallada de más de 500,000 recetas, entre las funcionalidades que dispone esta APP está el filtrado y ordenamiento de recetas por diferentes variables como si son traidos de la API o la DB, healthscore, nombre, calificación, además de la creación de nuevas recetas mediante un formulario controlado.",
                 "technologies": [
                     "JavaScript",
                     "React.js",
-                    "React-router",
+                    "Redux.js",
+                    "Node.js",
+                    "Express",
+                    "PostgreSQL",
                     "Styled Components",
-                    "GitHub-API"
+                    "Spoonacular-API"
                 ],
-                "image": "/images/GitHubProfile.webp",
-                "github": "https://github.com/DielanZH/GitHub-profile",
-                "deploy": "https://github-profile-dielanzh.vercel.app"
+                "image": "/images/recipes.webp",
+                "github": "https://github.com/DielanZH/Foods",
+                "deploy": ""
             }
         ]
     },
